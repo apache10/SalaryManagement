@@ -1,12 +1,11 @@
 class Manager{
 
-	private int totalMoney;
+	private int Money;
 	private int salary;
 
 	public void setsalary(int s){
 		salary = s;
-		setMoney();
-
+		setMoney(salary);
 	}
 
 	public int getsalary(){
@@ -14,7 +13,7 @@ class Manager{
 	}
 
 	private void setMoney(int s){
-		Money = salary / 3;
+		Money = s / 3;
 	}
 	public int getMoney(){
 		return Money;

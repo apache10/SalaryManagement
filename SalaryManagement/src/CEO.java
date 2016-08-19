@@ -1,6 +1,6 @@
  class CEO{
  	private int money;
- 	private salary;
+ 	private int salary;
 
  	public void setmoney(int m){
  		money = m;

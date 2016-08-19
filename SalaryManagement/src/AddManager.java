@@ -2,9 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class Login {
+public class AddManager {
 
-public static void main (String[] args){    
+public AddManager(){
   JFrame frame = new JFrame("Enter the respective details");
   frame.setVisible(true);
   frame.setSize(500,200);
@@ -12,7 +12,7 @@ public static void main (String[] args){
 
   JPanel panel = new JPanel();
   frame.add(panel);
-  JButton button = new JButton("log in");
+  JButton button = new JButton("ADD MANAGER");
   panel.add(button);
   button.addActionListener (new Action1());
 

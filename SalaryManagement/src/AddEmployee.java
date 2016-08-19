@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 public class AddEmployee {
 
-public static void main (String[] args){    
+public AddEmployee(){    
   JFrame frame = new JFrame("Enter the respective details");
   frame.setVisible(true);
   frame.setSize(500,200);
