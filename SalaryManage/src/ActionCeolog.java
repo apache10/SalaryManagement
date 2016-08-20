@@ -10,16 +10,27 @@ import java.awt.event.ActionListener;
 //log in button
 class ActionCeolog implements ActionListener {
     JFrame tempFrame;
+    JPasswordField pass;
+    JTextField CeoId;
+
     JFrame frame;
-    public ActionCeolog(JFrame logFrame){
+    public ActionCeolog(JFrame logFrame, JPasswordField pas, JTextField txt){
         tempFrame= logFrame;
+        CeoId = txt;
+        pass = pas;
+
     }
 
     public void actionPerformed (ActionEvent e) {
-        tempFrame.setVisible(false);
-        tempFrame.dispose();
-        frame = new JFrame("CEO");
-        frame.setVisible(true);
-        frame.setSize(400,300);
+        System.out.println(CeoId.getText());
+        System.out.println(pass.getPassword().toString());
+        if((CeoId.getText().equals(Constant.GAURAV))) {
+            tempFrame.setVisible(false);
+            tempFrame.dispose();
+            frame = new JFrame("CEO");
+            frame.setVisible(true);
+            frame.setSize(400, 300);
+        }
+        else return;
     }
 }

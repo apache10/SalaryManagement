@@ -39,7 +39,7 @@ class ActionMAG implements ActionListener {
         panel.add(magId);
         panel.add(pass);
         panel.add(button_Mag_log);
-        button_Mag_log.addActionListener (new ActionMaglog(frame));
+        button_Mag_log.addActionListener (new ActionMaglog(frame,magId,pass));
 
     }
 }

@@ -11,15 +11,22 @@ import java.awt.event.ActionListener;
 class ActionEmplog implements ActionListener {
     JFrame tempFrame;
     JFrame frame;
-    public ActionEmplog(JFrame logFrame){
+    JTextField EmpId;
+    JPasswordField pass;
+    public ActionEmplog(JFrame logFrame, JTextField txt, JPasswordField pas){
+
         tempFrame= logFrame;
+        EmpId = txt;
+        pass = pas;
     }
 
     public void actionPerformed (ActionEvent e) {
-        tempFrame.setVisible(false);
-        tempFrame.dispose();
-        frame = new JFrame("EMPLOYEE");
-        frame.setVisible(true);
-        frame.setSize(400,300);
+        if((EmpId.getText().equals(Constant.GAURAV))) {
+            tempFrame.setVisible(false);
+            tempFrame.dispose();
+            frame = new JFrame("EMPLOYEE");
+            frame.setVisible(true);
+            frame.setSize(400, 300);
+        }
     }
 }

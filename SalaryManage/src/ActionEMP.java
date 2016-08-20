@@ -40,6 +40,6 @@ class ActionEMP implements ActionListener {
         panel.add(empId);
         panel.add(pass);
         panel.add(button_Emp_log);
-        button_Emp_log.addActionListener (new ActionEmplog(frame));
+        button_Emp_log.addActionListener (new ActionEmplog(frame,empId,pass));
     }
 }

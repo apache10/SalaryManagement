@@ -38,6 +38,6 @@ class ActionCEO implements ActionListener {
         panel.add(ceoId);
         panel.add(pass);
         panel.add(button_Ceo_log);
-        button_Ceo_log.addActionListener (new ActionCeolog(frame));
+        button_Ceo_log.addActionListener (new ActionCeolog(frame,pass,ceoId));
     }
 }
