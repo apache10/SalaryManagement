@@ -2,22 +2,32 @@
  * Created by gaurav on 20-08-2016.
  */class Manager{
 
-    private int Money;
-    private int salary;
-
-    public void setsalary(int s){
+    private double Money;
+    private double salary;
+    private String name;
+public Manager(){
+    setMoney();
+    setname();}
+    public void setsalary(double s){
         salary = s;
-        setMoney(salary);
+        setMoney();
     }
 
-    public int getsalary(){
+    public double getsalary(){
         return salary;
     }
 
-    private void setMoney(int s){
-        Money = s / 3;
+    public void setname(){
+        name = Constant.CEO_NAME;
     }
-    public int getMoney(){
+    public String getname(){
+        return name;
+    }
+
+    public void setMoney(){
+        Money = salary / 3;
+    }
+    public double getMoney(){
         return Money;
     }
 

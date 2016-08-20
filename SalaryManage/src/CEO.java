@@ -1,24 +1,37 @@
 /**
  * Created by gaurav on 20-08-2016.
  */ class CEO{
-    private int money;
-    private int salary;
+    private double money;
+    private double salary;
+    private String name;
 
-    public void setmoney(int m){
-        money = m;
+
+    public  CEO(){
+        setmoney();
+        setname();
+    }
+
+    public void setmoney(){
+        money = Constant.REVENU;
         setsalary();
     }
 
-    public int getmoney(){
-        return money;
+    public double getmoney(){
+        return money*0.9;
 
     }
+    public void setname(){
+        name = Constant.CEO_NAME;
+    }
+    public String getname(){
+        return name;
+    }
 
-    private void setsalary(){
+    public void setsalary(){
         salary = money / 10;
     }
 
-    public int getsalary(){
+    public double getsalary(){
         return salary;
     }
 

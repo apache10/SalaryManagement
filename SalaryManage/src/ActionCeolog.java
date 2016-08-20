@@ -1,6 +1,7 @@
 /**
  * Created by gaurav on 20-08-2016.
  */import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -27,9 +28,24 @@ class ActionCeolog implements ActionListener {
         if((CeoId.getText().equals(Constant.GAURAV))) {
             tempFrame.setVisible(false);
             tempFrame.dispose();
-            frame = new JFrame("CEO");
+            frame = new JFrame("profile");
             frame.setVisible(true);
-            frame.setSize(400, 300);
+            frame.setSize(600, 500);
+
+            CEO c =new CEO();
+            JLabel label = new JLabel(c.getname());
+            JPanel panel = new JPanel();
+            frame.add(panel);
+            panel.add(label);
+
+            JLabel myLabel = new JLabel(String.valueOf(c.getsalary()));
+            panel.add(myLabel);
+
+
+            JButton button_Add_Mag = new JButton("ADD MANAGER");
+            panel.add(button_Add_Mag);
+            button_Add_Mag.addActionListener(new AddManager(frame));
+
         }
         else return;
     }

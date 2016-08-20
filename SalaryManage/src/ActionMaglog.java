@@ -25,6 +25,20 @@ class ActionMaglog implements ActionListener {
             frame = new JFrame("MANAGER");
             frame.setVisible(true);
             frame.setSize(400, 300);
+
+            Manager c =new Manager();
+            JLabel label = new JLabel(c.getname());
+            JPanel panel = new JPanel();
+            frame.add(panel);
+            panel.add(label);
+
+            JLabel myLabel = new JLabel(String.valueOf(c.getsalary()));
+            panel.add(myLabel);
+
+
+            JButton button_Add_EMP = new JButton("ADD EMPLOYEE");
+            panel.add(button_Add_EMP);
+            button_Add_EMP.addActionListener(new AddEmployee(frame));
         }
     }
 }
