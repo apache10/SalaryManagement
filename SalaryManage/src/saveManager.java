@@ -52,6 +52,7 @@ public saveManager(JFrame frame , JTextField empName,JTextField empExp){
 
         JButton button = new JButton("BACK");
         panel.add(button);
+        button.addActionListener(new AddManager(frame));
 
 
     }

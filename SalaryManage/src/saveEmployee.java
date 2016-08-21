@@ -47,6 +47,8 @@ public class saveEmployee implements ActionListener {
         panel.add(label);
         JButton button = new JButton("BACK");
         panel.add(button);
+        button.addActionListener(new AddEmployee(frame));
+
 
 
 

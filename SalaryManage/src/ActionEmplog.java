@@ -27,6 +27,12 @@ class ActionEmplog implements ActionListener {
             frame = new JFrame("EMPLOYEE");
             frame.setVisible(true);
             frame.setSize(400, 300);
+
+            JPanel panel = new JPanel();
+            frame.add(panel);
+            JButton button = new JButton("BACK");
+            panel.add(button);
+            button.addActionListener(new ActionEMP(frame));
         }
     }
 }

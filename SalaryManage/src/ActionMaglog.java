@@ -39,6 +39,9 @@ class ActionMaglog implements ActionListener {
             JButton button_Add_EMP = new JButton("ADD EMPLOYEE");
             panel.add(button_Add_EMP);
             button_Add_EMP.addActionListener(new AddEmployee(frame));
+            JButton button = new JButton("BACK");
+            panel.add(button);
+            button.addActionListener(new ActionMAG(frame));
         }
     }
 }

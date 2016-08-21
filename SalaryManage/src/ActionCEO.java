@@ -5,9 +5,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by vishal.kumar1 on 19/08/16.
- */
 //CEO
 class ActionCEO implements ActionListener {
     JFrame tempFrame;
@@ -39,5 +36,7 @@ class ActionCEO implements ActionListener {
         panel.add(pass);
         panel.add(button_Ceo_log);
         button_Ceo_log.addActionListener (new ActionCeolog(frame,pass,ceoId));
+
+
     }
 }

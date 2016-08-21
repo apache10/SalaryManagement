@@ -5,9 +5,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by vishal.kumar1 on 19/08/16.
- */
 //log in button
 class ActionCeolog implements ActionListener {
     JFrame tempFrame;
@@ -45,6 +42,9 @@ class ActionCeolog implements ActionListener {
             JButton button_Add_Mag = new JButton("ADD MANAGER");
             panel.add(button_Add_Mag);
             button_Add_Mag.addActionListener(new AddManager(frame));
+            JButton button = new JButton("BACK");
+            panel.add(button);
+            button.addActionListener(new ActionCEO(frame));
 
         }
         else return;

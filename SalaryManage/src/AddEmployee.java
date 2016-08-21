@@ -12,19 +12,6 @@ public class AddEmployee implements ActionListener {
         tempFrame = logFrame;
     }
 
-   /* public AddEmployee(){
-        JFrame frame = new JFrame("Enter the respective details");
-        frame.setVisible(true);
-        frame.setSize(500,200);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        JPanel panel = new JPanel();
-        frame.add(panel);
-        JButton button = new JButton("ADD EMPLOYEE");
-        panel.add(button);
-        button.addActionListener (new Action1());
-
-    }*/
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -42,20 +29,12 @@ public class AddEmployee implements ActionListener {
         JButton button = new JButton("ADD EMPLOYEE");
         panel.add(button);
         button.addActionListener(new saveEmployee(frame,employeeName, employeeExp));
+        JButton button1 = new JButton("BACK");
+        panel.add(button1);
+        button1.addActionListener(new ActionMAG(frame));
     }
 
 
-   /* static class Action1 implements ActionListener {
-        public void actionPerformed (ActionEvent e) {
-            JFrame frame2 = new JFrame("details");
-            frame2.setVisible(true);
-            frame2.setSize(200,200);
-            JLabel label = new JLabel("mag");
-            JPanel panel = new JPanel();
-            frame2.add(panel);
-            panel.add(label);
-        }
-    }*/
 
 }
 
