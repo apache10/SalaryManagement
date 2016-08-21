@@ -6,6 +6,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.*;
 
 public class AddManager  implements ActionListener {
     JFrame tempFrame;
@@ -43,9 +44,11 @@ public class AddManager  implements ActionListener {
         panel.add(managerExp);
         JButton button = new JButton("ADD MANAGER");
         panel.add(button);
+        button.addActionListener(new saveManager(frame,managerName,managerExp));
+
     }
 
-    static class Action1 implements ActionListener {
+    /*static class Action1 implements ActionListener {
         public void actionPerformed (ActionEvent e) {
             JFrame frame2 = new JFrame("details");
             frame2.setVisible(true);
@@ -55,6 +58,6 @@ public class AddManager  implements ActionListener {
             frame2.add(panel);
             panel.add(label);
         }
-    }
+    }*/
 
 }

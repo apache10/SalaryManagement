@@ -41,10 +41,11 @@ public class AddEmployee implements ActionListener {
         panel.add(employeeExp);
         JButton button = new JButton("ADD EMPLOYEE");
         panel.add(button);
+        button.addActionListener(new saveEmployee(frame,employeeName, employeeExp));
     }
 
 
-    static class Action1 implements ActionListener {
+   /* static class Action1 implements ActionListener {
         public void actionPerformed (ActionEvent e) {
             JFrame frame2 = new JFrame("details");
             frame2.setVisible(true);
@@ -54,7 +55,7 @@ public class AddEmployee implements ActionListener {
             frame2.add(panel);
             panel.add(label);
         }
-    }
+    }*/
 
 }
 

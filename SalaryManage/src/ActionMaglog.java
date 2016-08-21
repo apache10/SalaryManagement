@@ -22,7 +22,7 @@ class ActionMaglog implements ActionListener {
         if ((MagId.getText().equals(Constant.GAURAV))) {
             tempFrame.setVisible(false);
             tempFrame.dispose();
-            frame = new JFrame("MANAGER");
+            frame = new JFrame("MANAGER profile");
             frame.setVisible(true);
             frame.setSize(400, 300);
 
